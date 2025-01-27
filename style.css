@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hanuman:wght@100;300;400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+header {
+  gap: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav a {
+  font-family: "Inter", serif;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 60px;
+  letter-spacing: -0.28px;
+  color: black;
+  text-decoration: none;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.apple-logo {
+  background-image: url(./header/apple-logo.png);
+  width: 12.97px;
+  height: 15.94px;
+  align-items: center;
+}
+.search-bar {
+  background-image: url(./header/search.png);
+  width: 15px;
+  height: 15px;
+}
+.shopping-bag {
+  background-image: url(./header/shopping-bag.png);
+  width: 14px;
+  height: 40px;
+  margin-left: 8px;
+}
+.menu-bar {
+  background-image: url(./header/menu.png);
+  width: 14px;
+  height: 14px;
+  display: none;
+}
+.donate {
+  font-family: "Inter", serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+  color: #1d1d1f;
+  padding-bottom: 16px;
+}
+
+.hero-iphone {
+  background-image: url(./hero/16-pro.png);
+  width: 100vw;
+  height: 692px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.info {
+  padding-top: 51px;
+  font-family: "Inter", serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.iphone-bold {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.2800000011920929px;
+  color: #f5f5f7;
+}
+.hello-ai {
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 32px;
+  color: #f5f5f7;
+}
+.dood-2 {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20px;
+  letter-spacing: -0.374px;
+  padding-top: 10px;
+}
+.learn-more {
+  width: 133px;
+  height: 44px;
+  padding: 12px 20px 12px 20px;
+  gap: 10px;
+  border-radius: 999px;
+  background-color: #0071e3;
+  color: white;
+}
+.hero-iphone-buy {
+  width: 68px;
+  height: 44px;
+  padding: 12px 20px 12px 20px;
+  gap: 10px;
+  border-radius: 999px;
+  border: 1px solid #2997ff;
+  color: #2997ff;
+}
+.info-purple {
+  padding-top: 51px;
+  font-family: "Inter", serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.purple {
+  background-color: white;
+  color: black;
+}
+.purple-2 {
+  color: white;
+  border-color: white;
+}
+.hero-iphone-purple {
+  background-image: url(./hero/iphone-16-purple.png);
+  width: 100vw;
+  height: 692px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero-apple-gift {
+  background-image: url(./hero/apple-gift.png);
+  width: 100vw;
+  height: 692px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.gift-info {
+  font-family: "Inter", serif;
+  text-align: center;
+  padding-top: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.gift {
+  color: black;
+}
+.shop-gifts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ipad-airpods {
+  display: flex;
+}
+.ipad-air {
+  background-image: url(./hero/ipad-air-desktop.png);
+  width: 50vw;
+  height: 580px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ipads {
+  color: black;
+}
+.ipad-info {
+  padding-top: 60px;
+  font-family: "Inter", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+}
+.ipad {
+  font-size: 16px;
+}
+.rgbhello{
+    color: linear-gradient(90.43deg, #0090F7 0%, #BA62FC 33.33%, #F2416B 66.67%, #F55600 100%);
+    font-size: 14px;
+    font-family: "Inter",serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 310px;
+
+}
+.ipad-airpod-door-2 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 12px;
+}
+.airpods-pro {
+  background-image: url(./hero/airpods-desktop.png);
+  width: 50vw;
+  height: 580px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.airpod-name{
+    color: white;
+}
+.airpod-info{
+    padding-top: 400px;
+}
+@media only screen and (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .search-bar {
+    margin-left: auto;
+  }
+  .hero-iphone {
+    background-image: url(./hero/hero-iphone-tablet.png);
+    height: 650px;
+  }
+  .iphone-bold {
+    font-size: 42px;
+  }
+  .hello-ai {
+    font-size: 22px;
+  }
+  .dood-2 {
+    font-size: 16px;
+  }
+  .hero-iphone-purple {
+    background-image: url(./hero/iphone-16-tablet.png);
+    height: 650px;
+  }
+  .hero-apple-gift {
+    display: none;
+  }
+  .ipad-air{
+    background-image: url(./hero/ipad-air-tablet.png);
+    height: 650px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .navigation {
+    display: none;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .search-bar {
+    margin-left: auto;
+  }
+  .hero-iphone {
+    background-image: url(./hero/hero-iphone-mobile.png);
+    height: 500px;
+  }
+  .hero-iphone-info {
+    padding-top: 300px;
+  }
+  .iphone-bold {
+    font-size: 30px;
+  }
+  .hello-ai {
+    font-size: 18px;
+  }
+  .dood-2 {
+    font-size: 14px;
+  }
+  .hero-iphone-purple {
+    background-image: url(./hero/iphone-16-mobile.jpg);
+    height: 500px;
+  }
+  .hero-iphone-info-purple {
+    margin-top: -30px;
+  }
+  .hero-apple-gift {
+    display: none;
+  }
+  .ipad-air{
+    background-image: url(./hero/ipad-air-mobile.png);
+    height: 500px;
+  }
+}
