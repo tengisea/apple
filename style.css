@@ -151,8 +151,6 @@ nav a {
   font-family: "Inter", serif;
   text-align: center;
   padding-top: 430px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 .gift {
@@ -161,17 +159,16 @@ nav a {
 .shop-gifts {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .ipad-airpods {
   display: flex;
 }
 .ipad-air {
   background-image: url(./hero/ipad-air-desktop.png);
-  width: 50vw;
-  height: 580px;
   background-repeat: no-repeat;
   background-size: cover;
+  grid-area: ipad-air;
+  background-position: center;
 }
 .ipads {
   color: black;
@@ -187,34 +184,79 @@ nav a {
 .ipad {
   font-size: 16px;
 }
-.rgbhello{
-    color: linear-gradient(90.43deg, #0090F7 0%, #BA62FC 33.33%, #F2416B 66.67%, #F55600 100%);
-    font-size: 14px;
-    font-family: "Inter",serif;
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-    padding-top: 310px;
-
+.rgbhello {
+  color: linear-gradient(
+    90.43deg,
+    #0090f7 0%,
+    #ba62fc 33.33%,
+    #f2416b 66.67%,
+    #f55600 100%
+  );
+  font-size: 14px;
+  font-family: "Inter", serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 310px;
 }
 .ipad-airpod-door-2 {
   display: flex;
   justify-content: center;
   gap: 10px;
   font-size: 12px;
+  align-items: center;
+  text-align: center;
 }
 .airpods-pro {
   background-image: url(./hero/airpods-desktop.png);
-  width: 50vw;
-  height: 580px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  grid: airpods-pro;
 }
-.airpod-name{
-    color: white;
+.airpod-name {
+  color: white;
 }
-.airpod-info{
-    padding-top: 400px;
+.airpod-info {
+  padding-top: 400px;
+}
+.grid {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 580px);
+  grid-template-areas: 
+  "ipad-air airpods-pro"
+  "watch macbook-air"
+  "trade-in card";
+}
+.watch {
+  background-image: url(./grid/watch-desktop.png);
+  grid-area: watch;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.macbook-air{
+  background-image: url(./grid/macbook-air-desktop.png);
+  grid-area: macbook-air;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.trade-in{
+  background-image: url(./grid/trade-in-desktop.png);
+  .grid-area: trade-in;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card{
+  background-image: url(./grid/card-desktop.png);
+  grid-area: card;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media only screen and (max-width: 768px) {
   .navigation {
@@ -248,9 +290,62 @@ nav a {
   .hero-apple-gift {
     display: none;
   }
-  .ipad-air{
+  .card{
+    display: none;
+  }
+  .grid{
+    grid-template-rows: repeat(3, 480px);
+    grid-template-areas: 
+    "airpods4 watch"
+    "macbook-air small-buss"
+    "carrier-deals trade-in";
+  }
+  .ipad-air {
     background-image: url(./hero/ipad-air-tablet.png);
     height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .airpods4{
+    background-image: url(./grid/airpods-4-tablet.png);
+    grid-area: airpods4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .watch{
+    background-image: url(./grid/watch-tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .macbook-air{
+    background-image: url(./grid/macbook-air-tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .small-buss{
+    background-image: url(./grid/small-buss-tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: small-buss;
+  }
+  .carrier-deals{
+    background-image: url(./grid/carrier-deals-tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: carrier-deals;
+  }
+  .trade-in{
+    background-image: url(./grid/trade-in-tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: trade-in;
   }
 }
 
@@ -270,7 +365,7 @@ nav a {
     background-image: url(./hero/hero-iphone-mobile.png);
     height: 500px;
   }
-  .hero-iphone-info {
+  .info {
     padding-top: 300px;
   }
   .iphone-bold {
@@ -286,14 +381,64 @@ nav a {
     background-image: url(./hero/iphone-16-mobile.jpg);
     height: 500px;
   }
-  .hero-iphone-info-purple {
+  .info-purple {
     margin-top: -30px;
   }
   .hero-apple-gift {
     display: none;
   }
-  .ipad-air{
+  .ipad-air {
     background-image: url(./hero/ipad-air-mobile.png);
     height: 500px;
+  }
+  .card{
+    display: none;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 500px);
+    grid-template-areas: 
+    "airpods4"
+    "watch"
+    "macbook-air"
+    "small-buss"
+    "carrier-deals"
+    "trade-in";
+  }
+  .airpods4{
+    background-image: url(./grid/airpods4-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .watch{
+    background-image: url(./grid/watch-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .macbook-air{
+    background-image: url(./grid/macbook-air-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .small-buss{
+    background-image: url(./grid/small-buss-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .carrier-deals{
+    background-image: url(./grid/carrier-deals-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .trade-in{
+    background-image: url(./grid/trade-in-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
