@@ -5,11 +5,13 @@ header {
   align-items: center;
   justify-content: center;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 nav a {
   font-family: "Inter", serif;
   font-size: 12px;
@@ -19,39 +21,46 @@ nav a {
   color: black;
   text-decoration: none;
 }
-.background{
+
+.background {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .navigation {
   display: flex;
   justify-content: space-between;
   gap: 24px;
 }
+
 .apple-logo {
   background-image: url(./header/apple-logo.png);
   width: 12.97px;
   height: 15.94px;
   align-items: center;
 }
+
 .search-bar {
   background-image: url(./header/search.png);
   width: 15px;
   height: 15px;
 }
+
 .shopping-bag {
   background-image: url(./header/shopping-bag.png);
   width: 14px;
   height: 40px;
   margin-left: 8px;
 }
+
 .menu-bar {
   background-image: url(./header/menu.png);
   width: 14px;
   height: 14px;
   display: none;
 }
+
 .donate {
   font-family: "Inter", serif;
   font-size: 14px;
@@ -66,39 +75,42 @@ nav a {
   background-image: url(./hero/16-pro.png);
   width: 100vw;
   height: 692px;
+  grid-area: 16-pro;
 }
+
 .info {
   padding-top: 51px;
   font-family: "Inter", serif;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
-.iphone-bold {
+
+.bold {
   font-size: 52px;
   font-weight: 600;
-  line-height: 60px;
-  letter-spacing: -0.2800000011920929px;
   color: #f5f5f7;
 }
+
 .hello-ai {
-  font-size: 24px;
-  font-weight: 100;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 32px;
   color: #f5f5f7;
 }
+
 .dood-2 {
   display: flex;
   gap: 16px;
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 20px;
   letter-spacing: -0.374px;
   padding-top: 10px;
 }
+
 .learn-more {
   width: 133px;
   height: 44px;
@@ -107,8 +119,10 @@ nav a {
   border-radius: 999px;
   background-color: #0071e3;
   color: white;
+
 }
-.hero-iphone-buy {
+
+.buy {
   width: 68px;
   height: 44px;
   padding: 12px 20px 12px 20px;
@@ -117,6 +131,7 @@ nav a {
   border: 1px solid #2997ff;
   color: #2997ff;
 }
+
 .info-purple {
   padding-top: 51px;
   font-family: "Inter", serif;
@@ -125,48 +140,66 @@ nav a {
   flex-direction: column;
   gap: 10px;
 }
+
 .purple {
   background-color: white;
   color: black;
 }
+
 .purple-2 {
   color: white;
   border-color: white;
 }
+
 .hero-iphone-purple {
   background-image: url(./hero/iphone-16-purple.png);
   width: 100vw;
   height: 692px;
+  grid-area: iphone-purple;
 }
+
 .hero-apple-gift {
   background-image: url(./hero/apple-gift.png);
   width: 100vw;
   height: 692px;
+  grid-area: apple-gift;
 }
+
 .gift-info {
   font-family: "Inter", serif;
   text-align: center;
   padding-top: 430px;
-  justify-content: center;
+  gap: 10px;
 }
+
 .gift {
   color: black;
 }
-.shop-gifts {
+
+.shop-gifts { 
   display: flex;
   justify-content: center;
+  justify-self: center;
 }
+
 .ipad-airpods {
   display: flex;
 }
+
 .ipad-air {
   background-image: url(./hero/ipad-air-desktop.png);
   grid-area: ipad-air;
-
 }
+
+.air-ipad {
+  display: none;
+  grid-area: air-ipad;
+}
+
 .ipads {
   color: black;
 }
+
 .ipad-info {
   padding-top: 60px;
   font-family: "Inter", serif;
@@ -174,10 +207,14 @@ nav a {
   font-weight: 400;
   line-height: 25px;
   text-align: center;
+  align-items: center;
 }
+
 .ipad {
   font-size: 16px;
+  padding-top: -10px;
 }
+
 .rgbhello {
   color: linear-gradient(
     90.43deg,
@@ -193,50 +230,103 @@ nav a {
   text-align: center;
   padding-top: 310px;
 }
-.ipad-airpod-door-2 {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  font-size: 12px;
-  align-items: center;
-  text-align: center;
-}
+
 .airpods-pro {
   background-image: url(./hero/airpods-desktop.png);
   grid: airpods-pro;
 }
+
 .airpod-name {
   color: white;
 }
+
 .airpod-info {
   padding-top: 400px;
 }
+
+.small-buss {
+  display: none;
+}
+
+.trade-more{
+ margin-right: 20px;
+ margin-left: 20px;
+ font-size: 16px;
+}
+
+.grid-deed3 {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 692px);
+  grid-template-areas:
+    "16-pro"
+    "iphone-purple"
+    "apple-gift";
+}
+
 .grid {
   display: grid;
-  gap: 5px;
+  gap: 12px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 580px);
-  grid-template-areas: 
-  "ipad-air airpods-pro"
-  "watch macbook-air"
-  "trade-in card";
+  grid-template-areas:
+    "ipad-air airpods-pro"
+    "watch macbook-air"
+    "trade-in card";
 }
+
+.watch-info{
+  gap: 4px;
+}
+
 .watch {
   background-image: url(./grid/watch-desktop.png);
   grid-area: watch;
+  color:#1D1D1F;
 }
-.macbook-air{
+
+.name{
+  color:#1D1D1F;
+  text-align: center;
+}
+
+.series{
+  font-size: 15px;
+  color:#1D1D1F
+}
+.macbook-air {
   background-image: url(./grid/macbook-air-desktop.png);
   grid-area: macbook-air;
+  color:#1D1D1F;
 }
-.trade-in{
+
+.trade-in {
   background-image: url(./grid/trade-in-desktop.png);
   grid-area: trade-in;
 }
-.card{
+
+.trade{
+  width: 170px;
+}
+
+.card {
   background-image: url(./grid/card-desktop.png);
   grid-area: card;
 }
+
+.card-buy{
+  width: 122px;
+}
+
+.carrier-deals {
+  display: none;
+}
+
+.airpods4 {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .navigation {
     display: none;
@@ -249,69 +339,102 @@ nav a {
   .search-bar {
     margin-left: auto;
   }
+
   .hero-iphone {
     background-image: url(./hero/hero-iphone-tablet.png);
-    height: 650px;
   }
-  .iphone-bold {
+
+  .bol {
     font-size: 42px;
   }
+
   .hello-ai {
     font-size: 22px;
   }
+
   .dood-2 {
     font-size: 16px;
   }
+
   .hero-iphone-purple {
     background-image: url(./hero/iphone-16-tablet.png);
-    height: 650px;
   }
+
   .hero-apple-gift {
     display: none;
   }
-  .card{
+
+  .card {
     display: none;
   }
-  .grid{
-    grid-template-rows: repeat(3, 480px);
-    grid-template-areas: 
-    "airpods4 watch"
-    "macbook-air small-buss"
-    "carrier-deals trade-in";
+
+  .airpods-pro {
+    display: none;
   }
+
   .ipad-air {
-    background-image: url(./hero/ipad-air-tablet.png);
-    height: 650px;
+    display: none;
   }
-  .airpods4{
+
+  .grid-deed3 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 650px);
+    grid-template-areas:
+      "16-pro"
+      "iphone-purple"
+      "air-ipad";
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 490px);
+    grid-template-areas:
+      "airpods4 watch"
+      "macbook-air small-buss"
+      "carrier-deals trade-in";
+  }
+
+  .air-ipad {
+    background-image: url(./hero/ipad-air-tablet.png);
+    display: block;
+  }
+
+  .airpods4 {
     background-image: url(./grid/airpods-4-tablet.png);
     grid-area: airpods4;
+    display: block;
   }
-  .watch{
-    background-image: url(./grid/watch-tablet.png);
-   
-  }
-  .macbook-air{
-    background-image: url(./grid/macbook-air-tablet.png);
-   
-  }
-  .small-buss{
-    background-image: url(./grid/small-buss-tablet.png);
 
+  .watch {
+    background-image: url(./grid/watch-tablet.png);
+    height: 490px;
+  }
+
+  .macbook-air {
+    background-image: url(./grid/macbook-air-tablet.png);
+    height: 490px;
+  }
+
+  .small-buss {
+    background-image: url(./grid/small-buss-tablet.png);
+    height: 490px;
     grid-area: small-buss;
+    display: block;
   }
-  .carrier-deals{
+
+  .carrier-deals {
     background-image: url(./grid/carrier-deals-tablet.png);
-  
+    height: 490px;
     grid-area: carrier-deals;
+    display: block;
   }
-  .trade-in{
+
+  .trade-in {
     background-image: url(./grid/trade-in-tablet.png);
- 
+    height: 490px;
     grid-area: trade-in;
   }
 }
-
 @media only screen and (max-width: 390px) {
   .navigation {
     display: none;
@@ -324,72 +447,102 @@ nav a {
   .search-bar {
     margin-left: auto;
   }
+
   .hero-iphone {
     background-image: url(./hero/hero-iphone-mobile.png);
     height: 500px;
   }
+
   .info {
     padding-top: 300px;
   }
-  .iphone-bold {
+
+  .bold {
     font-size: 30px;
   }
+
   .hello-ai {
     font-size: 18px;
   }
-  .dood-2 {
-    font-size: 14px;
-  }
+
   .hero-iphone-purple {
     background-image: url(./hero/iphone-16-mobile.jpg);
     height: 500px;
   }
+
   .info-purple {
     margin-top: -30px;
   }
+
   .hero-apple-gift {
     display: none;
   }
+
   .ipad-air {
     background-image: url(./hero/ipad-air-mobile.png);
-    height: 500px;
+
+    display: block;
   }
-  .card{
+
+  .card {
     display: none;
   }
+
+  .airpods-pro {
+    display: none;
+  }
+
+  .air-ipad {
+    display: none;
+  }
+
+  .ipad-info {
+    padding-bottom: 20px;
+  }
+
+  .grid-deed3 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 500px);
+    grid-template-areas:
+      "16-pro"
+      "iphone-purple";
+  }
+
   .grid {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 500px);
+    grid-template-rows: repeat(9, 500px);
     grid-template-areas: 
-    "airpods4"
-    "watch"
-    "macbook-air"
-    "small-buss"
-    "carrier-deals"
-    "trade-in";
+    /* "16-pro"
+    "iphone-purple" */
+      "ipad-air"
+      "airpods4"
+      "watch"
+      "macbook-air"
+      "small-buss"
+      "carrier-deals"
+      "trade-in";
   }
-  .airpods4{
+
+  .airpods4 {
     background-image: url(./grid/airpods4-mobile.png);
-  
   }
-  .watch{
+
+  .watch {
     background-image: url(./grid/watch-mobile.png);
-  
   }
-  .macbook-air{
+
+  .macbook-air {
     background-image: url(./grid/macbook-air-mobile.png);
-
   }
-  .small-buss{
+  .small-buss {
     background-image: url(./grid/small-buss-mobile.png);
-   
   }
-  .carrier-deals{
+
+  .carrier-deals {
     background-image: url(./grid/carrier-deals-mobile.png);
-
   }
-  .trade-in{
-    background-image: url(./grid/trade-in-mobile.png);
 
+  .trade-in {
+    background-image: url(./grid/trade-in-mobile.png);
   }
 }
