@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hanuman:wght@100;300;400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+header {
+  gap: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav a {
+  font-family: "Inter", serif;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 60px;
+  letter-spacing: -0.28px;
+  color: black;
+  text-decoration: none;
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.apple-logo {
+  background-image: url(./header/apple-logo.png);
+  width: 12.97px;
+  height: 15.94px;
+  align-items: center;
+}
+
+.search-bar {
+  background-image: url(./header/search.png);
+  width: 15px;
+  height: 15px;
+}
+
+.shopping-bag {
+  background-image: url(./header/shopping-bag.png);
+  width: 14px;
+  height: 40px;
+  margin-left: 8px;
+}
+
+.menu-bar {
+  background-image: url(./header/menu.png);
+  width: 14px;
+  height: 14px;
+  display: none;
+}
+
+.donate {
+  font-family: "Inter", serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+  color: #1d1d1f;
+  padding-bottom: 16px;
+}
+.blue{
+    background: #019FFB;
+    background: #F55BE4;
+    background: #E44CBB;
+    background: #FD8C1F;
+    backdrop-filter: 20px;
+    width: 1fr;
+    height: 75px;
+    top: -50px;
+    gap: 0px;
+    border-radius: 306.75px 0px 0px 0px;
+    opacity: 0.5px;
+    
+
+}

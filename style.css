@@ -325,21 +325,137 @@ nav a {
   width: 122px;
 }
 
-
 .buy:hover {
   background-color: #0071e3;
   color: white;
 }
+
 .purple-2:hover {
-  background-color: #0071e3;
-  color: white;
+  background-color: white;
+  color: black;
 }
-.appletv{
+
+.appletv {
   display: flex;
-  gap: 12px
-  ;
-  overflow-x: auto;
-  height: 680px;
+  gap: 12px;
+  overflow-x: scroll;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  height: 100%;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+.movie-background {
+  background-size: cover;
+  background-position: center;
+  height: 740px;
+  width: 1250px;
+  flex-shrink: 0;
+  display: flex;
+  scroll-snap-align: center;
+  opacity: calc((var(--progress-0-1)* -0.7) + .99);
+  will-change: opacity ;
+}
+
+.stream-now {
+  font-size: 14px;
+  line-height: 1.42859;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background: rgb(245, 245, 247);
+  border-radius: 44px;
+  text-shadow: none;
+}
+
+.category {
+  margin-left: 12px;
+  font-weight: 700px;
+  font-size: 17px;
+  color: rgb(245, 245, 247) ;
+}
+
+.about{
+  font-size: 14px;
+  color: rgb(245, 245, 247)
+}
+
+.movie-info{
+  display: flex;
+  align-items: center;
+  padding-top: 500px;
+  transition: all 0.6s;
+position: relative;
+  left: 70px;
+
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+
+}
+
+.severance {
+  background-image: url(./movies/severance-desktop.jpg);
+ 
+}
+
+.prime-target {
+  background-image: url(./movies/prime-target-desktop.jpg);
+
+}
+
+.silo {
+  background-image: url(./movies/silo-desktop.jpg);
+}
+
+.shrinking {
+  background-image: url(./movies/shrinking-desktop.jpg);
+  flex-shrink: 0;
+}
+
+.ted-lasso {
+  background-image: url(./movies/ted-lasso-desktop.jpg);
+  flex-shrink: 0;
+}
+
+.fly-me {
+  background-image: url(./movies/fly-me-desktop.jpg);
+  flex-shrink: 0;
+}
+
+.slow-horses {
+  background-image: url(./movies/slow-horses-desktop.jpg);
+  flex-shrink: 0;
+}
+
+.clooney {
+  background-image: url(./movies/clooney-desktop.jpg);
+  flex-shrink: 0;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  top: 30px;
+  bottom: 30px;
+  height: 8px;
+width: 8px;
+background-color: gray;
+border-radius: 50%;
+border-style: solid;
+border-color: gray;
+}
+
+.scroll {
+height: 8px;
+width: 8px;
+background-color: gray;
+border-radius: 50%;
+border-style: solid;
+border-color: gray;
 }
 
 @media only screen and (max-width: 834px) {
@@ -419,13 +535,22 @@ nav a {
     background-image: url(./grid/macbook-air-tablet.png);
   }
 
-
   .trade-in {
     background-image: url(./grid/trade-in-tablet.png);
     grid-area: trade-in;
   }
   .macbook-info {
-    padding-top: 20px;
+    padding-bottom: 200px;
+    top: 50px
+  }
+
+  .movie-background{
+    width:689px;
+    height: 100%;
+  }
+  .movie-info{
+    padding-top: 400px;
+    padding-bottom: 0px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -476,7 +601,7 @@ nav a {
     padding-bottom: 40px;
     display: block;
   }
-  
+
   .ipad-info {
     padding-bottom: 20px;
   }
@@ -499,8 +624,7 @@ nav a {
       "watch"
       "macbook-air"
       "trade-in"
-      "card"
-    ;
+      "card";
   }
 
   .watch {
@@ -509,7 +633,7 @@ nav a {
 
   .macbook-air {
     background-image: url(./grid/macbook-air-mobile.png);
-  }  
+  }
   .trade-in {
     background-image: url(./grid/trade-in-mobile.png);
   }
@@ -524,5 +648,51 @@ nav a {
   }
   .small-buss-info {
     padding-top: 40px;
+  }
+  .severance {
+    background-image: url(./movies/severance-mobile.jpg);
+  }
+
+  .prime-target {
+    background-image: url(./movies/prime-target.jpg);
+  }
+
+  .silo {
+    background-image: url(./movies/silo-mobile.jpg);
+  }
+
+  .shrinking {
+    background-image: url(./movies/shrinking-mobile.jpg);
+  }
+
+  .ted-lasso {
+    background-image: url(./movies/ted-lasso-mobile.jpg);
+  }
+
+  .fly-me {
+    background-image: url(./movies/fly-me-mobile.jpg);
+  }
+
+  .slow-horses {
+    background-image: url(./movies/slow-horses-mobile.jpg);
+  }
+
+  .clooney {
+    background-image: url(./movies/clooney-mobile.jpg);
+  }
+  .movie-background {
+    height: 470px;
+    width: 274px;
+    background-position: top center;
+  }
+  .movie-info{
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    position: static;
+    font-size: 15px;
+    gap: 12px;
   }
 }
