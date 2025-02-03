@@ -13,13 +13,16 @@ header {
 }
 
 nav a {
-  font-family: "Inter", serif;
   font-size: 12px;
   font-weight: 200;
   line-height: 60px;
   letter-spacing: -0.28px;
   color: black;
   text-decoration: none;
+}
+
+.text {
+  font-family: "Inter", serif;
 }
 
 .background {
@@ -66,7 +69,6 @@ nav a {
 }
 
 .donate {
-  font-family: "Inter", serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
@@ -74,18 +76,159 @@ nav a {
   color: #1d1d1f;
   padding-bottom: 16px;
 }
-.blue{
-    background: #019FFB;
-    background: #F55BE4;
-    background: #E44CBB;
-    background: #FD8C1F;
-    backdrop-filter: 20px;
-    width: 1fr;
-    height: 75px;
-    top: -50px;
-    gap: 0px;
-    border-radius: 306.75px 0px 0px 0px;
-    opacity: 0.5px;
-    
 
+.blue-header {
+  fill: #019ffb;
+  opacity: 0.5;
+  filter: blur(10px);
+  height: 75px;
+  width: 1fr;
+}
+
+.section {
+  font-family: "Inter", serif;
+  font-size: 44px;
+  font-weight: 700;
+  display: flex;
+  padding-left: 140px;
+  padding-right: 140px;
+  gap: 32px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.gift-magic {
+  color: #6e6e73;
+}
+
+.rgbstore {
+  background-image: linear-gradient(
+    90deg,
+    #0090f7 0%,
+    #ba62fc 50%,
+    #f2416b 100%
+  );
+  color: transparent;
+  background-clip: text;
+  width: max-content;
+}
+
+.shopping-help {
+  font-size: 14px;
+  display: flex;
+  align-items: flex-start;
+  margin-left: auto;
+  height: min-content;
+  gap: 16px;
+}
+
+.help-right-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.black {
+  color: #1d1d1f;
+  font-weight: 700px;
+}
+
+.blue {
+  color: #06c;
+  font-weight: 400px;
+}
+
+.product-list {
+  gap: 12px;
+  display: flex;
+  padding-left: 140px;
+  padding-right: 140px;
+  margin-bottom: 60px;
+}
+
+.arvanneg {
+  display: flex;
+  width: 136px;
+  padding: 16px 8px;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.section-title {
+  display: flex;
+  font-weight: 700;
+  font-size: 24px;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.the-latest {
+  padding-left: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.item-detail {
+  display: flex;
+  gap: 20px;
+}
+.back{
+  z-index: -1;
+}
+
+.detail{
+  display: flex;
+width: 322px;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+padding-top: 31px;
+padding-left: 30px;
+border-radius: 22px;
+}
+
+.iphone-16-pro{
+  background-image: url(./section/store-card-50-holiday-iphone-pro-202411_GEO_US.png);
+  width: 480px;
+  height: 500px;
+}
+
+.apple-watch-10{
+  background-image: url(./section/store-card-50-holiday-watch-s10-202411.png);
+  width: 480px;
+  height: 500px;
+}
+
+.ipad-mini{
+  background-image: url(./section/store-card-50-holiday-ipad-mini-202411.png);
+  width: 480px;
+  height: 500px;
+}
+
+.macbook-pro{
+  background-image: url(./section/store-card-50-holiday-macbook-pro-202411.png);
+  width: 480px;
+  height: 500px;
+}
+
+.watch2{
+  padding-top: 54px;
+}
+.apple-intel {
+  color: #b64400;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.product-name {
+  color: #1d1d1f;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.product-price {
+  color: #1d1d1f;
+  font-size: 18px;
+  font-weight: 400;
 }
