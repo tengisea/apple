@@ -77,14 +77,6 @@ nav a {
   padding-bottom: 16px;
 }
 
-.blue-header {
-  fill: #019ffb;
-  opacity: 0.5;
-  filter: blur(10px);
-  height: 75px;
-  width: 1fr;
-}
-
 .section {
   font-family: "Inter", serif;
   font-size: 44px;
@@ -155,64 +147,63 @@ nav a {
 }
 
 .section-title {
-  display: flex;
   font-weight: 700;
   font-size: 24px;
   gap: 32px;
   margin-bottom: 24px;
+  width: max-content;
 }
 
 .the-latest {
   padding-left: 140px;
   display: flex;
   flex-direction: column;
-  gap: 60px;
 }
 
 .item-detail {
   display: flex;
   gap: 20px;
 }
-.back{
+.back {
   z-index: -1;
 }
 
-.detail{
+.detail {
   display: flex;
-width: 322px;
-flex-direction: column;
-align-items: flex-start;
-gap: 12px;
-padding-top: 31px;
-padding-left: 30px;
-border-radius: 22px;
+  width: 322px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding-top: 31px;
+  padding-left: 30px;
+  border-radius: 22px;
 }
 
-.iphone-16-pro{
+.iphone-16-pro {
   background-image: url(./section/store-card-50-holiday-iphone-pro-202411_GEO_US.png);
   width: 480px;
   height: 500px;
 }
 
-.apple-watch-10{
+.apple-watch-10 {
   background-image: url(./section/store-card-50-holiday-watch-s10-202411.png);
   width: 480px;
   height: 500px;
 }
 
-.ipad-mini{
+.ipad-mini {
   background-image: url(./section/store-card-50-holiday-ipad-mini-202411.png);
   width: 480px;
   height: 500px;
 }
 
-.macbook-pro{
+.macbook-pro {
   background-image: url(./section/store-card-50-holiday-macbook-pro-202411.png);
   width: 480px;
   height: 500px;
 }
 
-.watch2{
+.watch2 {
   padding-top: 54px;
 }
 .apple-intel {
@@ -231,4 +222,346 @@ border-radius: 22px;
   color: #1d1d1f;
   font-size: 18px;
   font-weight: 400;
+}
+
+.airpod-list {
+  padding-left: 140px;
+  gap: 60px;
+  padding-top: 60px;
+}
+
+.airpods-imgs {
+  background-image: url(airpods//store-card-40-holiday-engraving.png);
+  height: 500px;
+  width: 400px;
+  border-radius: 22px;
+}
+
+.polo {
+  width: 400px;
+  color: #1d1d1f;
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-top: 53px;
+}
+
+.item-detail-2 {
+  padding-top: 24px;
+  display: flex;
+  gap: 20px;
+}
+
+.perso {
+  padding: 71px 28px 32px 28px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 313px;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.08);
+}
+
+.selectors {
+  display: flex;
+  width: 253px;
+  height: 58px;
+  padding: 25px 86px 21px 79px;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.free-engraving {
+  color: #b64400;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.airpods-name {
+  color: #1d1d1f;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.airpods-text {
+  padding-top: 58px;
+}
+
+.airpods-price {
+  color: #1d1d1f;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 32px;
+}
+
+.holiday-picks {
+  padding-left: 140px;
+  padding-top: 60px;
+}
+
+.item-detail-3 {
+  display: flex;
+  gap: 24px;
+  padding-left: 140px;
+}
+
+.only-at-apple {
+  padding-left: 140px;
+  padding-top: 60px;
+}
+
+.only-apple {
+  padding-bottom: 24px;
+}
+
+.only-content {
+  display: flex;
+  gap: 20px;
+}
+
+.surprise-your {
+  background-image: url(./smart-folio/store-card-40-holiday-quick-picks-202411.png);
+  border-radius: 22px;
+  width: 400px;
+}
+
+.holiday-delivery {
+  background-image: url(./only-at-apple/store-card-50-holiday-delivery-pickup-202411.png);
+  border-radius: 22px;
+  width: 480px;
+  height: 500px;
+  display: flex;
+}
+.holiday-text {
+  font-size: 26px;
+  font-weight: 700;
+  padding-left: 30px;
+  padding-top: 50px;
+  display: flex;
+}
+
+.durvun-text {
+  color: #1d1d1f;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.neg-text {
+  display: grid;
+  grid-area: neg;
+}
+
+.hoer-text {
+  grid-area: hoer;
+}
+
+.gurav-text {
+  grid-area: gurav;
+}
+
+.duruv-text {
+  grid-area: duruv;
+}
+
+.ijil-4 {
+  width: 313px;
+  height: 240px;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 2px 4px 12px 0px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.durvun-text {
+  padding-left: 20px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 313px);
+  grid-template-rows: repeat(2, 240px);
+  grid-template-areas:
+    "neg hoer"
+    "gurav duruv";
+}
+.apple-trade-in {
+  background-image: url(./store/store-card-50-holiday-trade-in-202411.png);
+  width: 480px;
+  height: 500px;
+}
+
+.trade-in-text {
+  color: #6e6e73;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 30px;
+}
+
+.trade-in-context {
+  font-size: 25px;
+  font-weight: 700;
+  padding-left: 30px;
+  border-radius: 44px;
+}
+
+.the-apple-exp {
+  padding-left: 140px;
+  padding-top: 60px;
+}
+
+.apple-exp {
+  padding-bottom: 24px;
+}
+
+.apple-exp-content {
+  display: flex;
+  gap: 20px;
+}
+
+.apple-music {
+  background-image: url(./experience/store-card-50-holiday-apple-music-202411.jpg);
+  width: 480px;
+  height: 500px;
+  border-radius: 44px;
+}
+
+.about {
+  font-size: 17px;
+  font-weight: 400;
+  padding-left: 30px;
+  padding-top: 22px;
+}
+
+.apple-tv {
+  background-image: url(experience/store-card-50-holiday-apple-tv-202411.png);
+  width: 480px;
+  height: 500px;
+  border-radius: 44px;
+}
+
+.trade-in-text-white {
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 30px;
+}
+
+.trade-in-context-white {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  padding-left: 30px;
+  border-radius: 44px;
+}
+
+.six {
+  padding-top: 70px;
+}
+.apple-six {
+  background-image: url(experience/store-card-50-subscriptions-202108_GEO_US.jpg);
+  width: 480px;
+  height: 500px;
+  border-radius: 44px;
+}
+
+.apple-ai {
+  background-image: url(./experience/store-card-50-apple-intelligence-202410_GEO_US.png);
+  width: 480px;
+  height: 500px;
+  border-radius: 44px;
+}
+
+.special-savings {
+  padding-left: 140px;
+  padding-top: 60px;
+}
+
+.carrier-deals {
+  background-image: url(./special-savings/iphone-card-40-carriertrade-202409.png);
+  height: 500px;
+  width: 400px;
+  border-radius: 22px
+}
+
+.education {
+  background-image: url(./special-savings/store-card-40-bts-edu-macbook-air-ipad-air-202406.png);
+  height: 500px;
+  width: 400px;
+  border-radius: 22px
+}
+
+.refurbish {
+  background-image: url(./special-savings/store-card-40-refurb-202408.png);
+  height: 500px;
+  width: 400px;
+  border-radius: 22px
+}
+
+.business {
+  background-image: url(./special-savings/iphone-card-40-business-202409.png);
+  height: 500px;
+  width: 400px;
+  color: white;
+  border-radius: 22px
+}
+
+.government {
+  background-image: url(./special-savings/govov.jpeg);
+  height: 500px;
+  width: 400px;
+  border-radius: 22px;
+}
+
+.savings-content {
+  display: flex;
+  gap: 20px;
+}
+
+footer{
+  padding-left: 140px;
+  padding-top: 60px;
+}
+
+.footer-head{
+font-size: 26px;
+font-weight: 700;
+}
+
+.footer-links{
+text-align: center;
+font-size: 14px;
+font-weight: 400;
+display: flex;
+padding: 10px 12px;
+align-items: center;
+gap: 8px;
+}
+
+.order{
+  border-radius: 999px;
+border: 1px solid #1D1D1F;
+padding: 10px 12px;
+}
+
+.shopping{
+  border-radius: 999px;
+border: 1px solid #1D1D1F;
+padding: 10px 12px;
+}
+
+.returns{
+  border-radius: 999px;
+border: 1px solid #1D1D1F; 
+padding: 10px 12px;
+}
+
+.your-saves{
+  border-radius: 999px;
+border: 1px solid #1D1D1F;
+padding: 10px 12px;
 }
