@@ -438,24 +438,20 @@ position: relative;
   display: flex;
   justify-content: center;
   gap: 30px;
-  position: relative;
-  top: 30px;
-  bottom: 30px;
-  height: 8px;
-width: 8px;
-background-color: gray;
-border-radius: 50%;
-border-style: solid;
-border-color: gray;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .scroll {
 height: 8px;
 width: 8px;
-background-color: gray;
 border-radius: 50%;
 border-style: solid;
-border-color: gray;
+rx: 4;
+background-color: gray;
+fill: black;
+fill-opacity: 0.42;
+fill-opacity: 0.8;
 }
 
 @media only screen and (max-width: 834px) {
@@ -539,6 +535,7 @@ border-color: gray;
     background-image: url(./grid/trade-in-tablet.png);
     grid-area: trade-in;
   }
+  
   .macbook-info {
     padding-bottom: 200px;
     top: 50px
@@ -548,10 +545,12 @@ border-color: gray;
     width:689px;
     height: 100%;
   }
+
   .movie-info{
     padding-top: 400px;
     padding-bottom: 0px;
   }
+
 }
 @media only screen and (max-width: 600px) {
   .navigation {
@@ -634,21 +633,27 @@ border-color: gray;
   .macbook-air {
     background-image: url(./grid/macbook-air-mobile.png);
   }
+
   .trade-in {
     background-image: url(./grid/trade-in-mobile.png);
   }
+
   .ipad-info {
     padding-top: 30px;
   }
+
   .watch-info {
     padding-top: 30px;
   }
+
   .macbook-info {
     padding-top: 30px;
   }
+
   .small-buss-info {
     padding-top: 40px;
   }
+
   .severance {
     background-image: url(./movies/severance-mobile.jpg);
   }
@@ -680,11 +685,13 @@ border-color: gray;
   .clooney {
     background-image: url(./movies/clooney-mobile.jpg);
   }
+
   .movie-background {
     height: 470px;
     width: 274px;
     background-position: top center;
   }
+
   .movie-info{
     padding: 0;
     display: flex;
